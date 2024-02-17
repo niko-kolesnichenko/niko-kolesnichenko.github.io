@@ -12,7 +12,7 @@
 <svelte:element
 	this={href ? 'a' : 'div'}
 	{href}
-	class={`chip-icon row-center relative text-inherit decoration-none p-10px m-r-5px m-b-5px border-1px border-none border-[var(--border)] hover:border-[var(--border-hover)] rounded-10px ${
+	class={`chip-icon row-center relative text-inherit decoration-none p-10px m-r-5px m-b-5px border-1px border-[var(--border)] hover:border-[var(--border-hover)] rounded-10px ${
 		href ? 'cursor-pointer' : 'cursor-help'
 	} ${grayscale ? 'grayscale-65 hover:grayscale-0' : ''}`}
 	data-help={name}
@@ -21,7 +21,7 @@
 		<slot />
 	{:else}
 		<img
-			class={`w-auto h-40px ${inverted ? 'invert-100' : ''}`}
+			class={`w-15px h-15px ${inverted ? 'invert-100' : ''}`}
 			class:chip-icon-logo-inverted={$theme && inverted}
 			src={logo}
 			alt={name}
@@ -43,14 +43,13 @@
 				padding: 5px 10px;
 				left: 10px;
 				top: calc(100% + 0px);
-				border: none;
 				border-radius: 15px;
 			}
 		}
 
 		&-logo {
-			height: 40px;
-			width: auto;
+			height: 15px;
+			width: 15px;
 
 			&-inverted {
 				filter: invert(100);
