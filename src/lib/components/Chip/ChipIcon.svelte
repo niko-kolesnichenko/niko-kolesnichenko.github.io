@@ -4,7 +4,7 @@
 	export let name = '';
 	export let logo = '';
 	export let inverted = false;
-	export let grayscale = true;
+	export let grayscale = false;
 
 	export let href: string | undefined = undefined;
 </script>
@@ -21,7 +21,7 @@
 		<slot />
 	{:else}
 		<img
-			class={`w-15px h-15px ${inverted ? 'invert-100' : ''}`}
+			class={`w-30px h-30px ${inverted ? 'invert-100' : ''}`}
 			class:chip-icon-logo-inverted={$theme && inverted}
 			src={logo}
 			alt={name}
@@ -48,8 +48,8 @@
 		}
 
 		&-logo {
-			height: 15px;
-			width: 15px;
+			height: 30px;
+			width: 30px;
 
 			&-inverted {
 				filter: invert(100);
