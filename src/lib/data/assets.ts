@@ -30,7 +30,7 @@ const Assets = {
 	Kubernetes: a('kubernetees.svg'),
 	Csharp: a('csharp.svg'),
 	Xamarin: a('xamarin.svg'),
-	TypeScript: a('ts.png'),
+	TypeScript: a('https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E'),
 	VueJs: a('vue.png'),
 	ReactJs: a('react.svg'),
 	Dart: a('dart.png'),
