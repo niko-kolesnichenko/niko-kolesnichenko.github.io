@@ -14,7 +14,7 @@ import {
 } from './types';
 import { Icons } from './utils';
 
-export const TITLE_SUFFIX = 'Slick template with Svelte';
+export const TITLE_SUFFIX = 'Nikolai Kolesnichenko Portfolio';
 
 export const NavBar = {
 	home: 'Home',
@@ -47,7 +47,7 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 export const HOME: HomePageParams = {
 	title: 'Home',
 	name: 'Nikolai',
-	lastName: 'Kolesnichenko	',
+	lastName: 'Kolesnichenko',
 	description:
 		'Driving Business Value as Project Manager & QA Lead | Simplifying Extra-Complex & Data-Intensive Software Solutions | 9+ Years in IT | STEM Background | Frontend & Data Engineering Enthusiast 🧩',
 	links: [
